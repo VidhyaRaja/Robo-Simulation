@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: rgb(255, 255, 255);
+  padding:0;
+  margin:0;
+}
+
+#thing {
+  width:50px;
+  height:60px;
+  transition: all 5s ease-in;
+}
+

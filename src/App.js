@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Component } from 'react';
+import FormHandler from './FormHandler';
+import Graph from './Graph';
+import ContinentalLogo from './Continentallogo';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+
+  render(){
+    return (
+      <div>
+        <ContinentalLogo />
+        <FormHandler />
+        <Graph />
+      </div>
+    );
+  }
 }
 
 export default App;
